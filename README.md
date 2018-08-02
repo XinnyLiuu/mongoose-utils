@@ -1,12 +1,11 @@
-### CUSTOM MONGOOSE UTILS
+Custom Mongoose Utils
+---
 
-The purpose of these custom mognoose functions is to make the use of mongoose functions more informational.
+- The purpose of these custom mognoose functions is to make the use of mongoose functions more informational.
 
-Mongoose has too many similar functions such as **findOne**, **findOneAndRemove**, **findOneAndUpdate**, **update**, etc.
+- Mongoose has too many similar functions such as **findOne**, **findOneAndRemove**, **findOneAndUpdate**, **update**, etc.
 
-Normally, mongoose only outputs the default: **'{ n: 1, nModified: 1, ok: 1 }'**.
-
-**This isnt useful for the programmer**. There really is no output we can use.
+- Normally, mongoose only outputs the default: **'{ n: 1, nModified: 1, ok: 1 }'**. **This isnt useful for the programmer**. There really is no output we can use.
 
 **These custom functions will return a object 'resp' with properties 'doc' and 'metadata'. The programmer can then access the data and modify it further. Additionally, the code can be customized to suit any projects means.**
 
@@ -19,7 +18,6 @@ The functions will accept the parameters:
 
 OUTPUT ..
 ---
-
 These functions will utilize the mongoose functions, but create a custom object that will have the following properties:
 - resp: ( short for the response aka. output )
 	- doc/docs (contains the array of documents from the lookup)
