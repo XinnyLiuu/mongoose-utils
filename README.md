@@ -1,4 +1,4 @@
-CUSTOM MONGOOSE UTILS
+### CUSTOM MONGOOSE UTILS
 
 The purpose of these custom mognoose functions is to make the use of mongoose functions more informational.
 
@@ -10,13 +10,16 @@ Normally, mongoose only outputs the default: **'{ n: 1, nModified: 1, ok: 1 }'**
 
 **These custom functions will return a object 'resp' with properties 'doc' and 'metadata'. The programmer can then access the data and modify it further. Additionally, the code can be customized to suit any projects means.**
 
-INPUT --
+INPUT ..
+---
 The functions will accept the parameters:
 - resourceName (the mongodb collection)
 - query
 - opts ( NOTE: FOR SEARCH ONLY, additional parameters such as skip, limit, sort )
 
-OUTPUT 
+OUTPUT ..
+---
+
 These functions will utilize the mongoose functions, but create a custom object that will have the following properties:
 - resp: ( short for the response aka. output )
 	- doc/docs (contains the array of documents from the lookup)
